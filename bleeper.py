@@ -6,7 +6,8 @@ r = sr.Recognizer()
 mic = sr.Microphone()
 
 # Set up the list of bad words
-bad_words = ["fuck", "shit"]
+bad_words = ["fuck", "shit", "Swear word here"]
+#good_words = ["Good words here"]
 
 # Main loop
 while True:
@@ -26,6 +27,12 @@ while True:
                 # Play a bleep sound
                 winsound.PlaySound("bleep.wav", winsound.SND_FILENAME)
                 break
+                
+       #for word in good_words:
+           # if word in text.lower():
+                # Play good word sound
+                #winsound.PlaySound("AudioFileHere.wav", winsound.SND_FILENAME)
+              #  break
 
     except sr.UnknownValueError:
         print("Could not understand audio")
