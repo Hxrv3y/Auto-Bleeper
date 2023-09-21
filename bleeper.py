@@ -6,7 +6,7 @@ r = sr.Recognizer()
 mic = sr.Microphone()
 
 # Set up the list of bad words
-bad_words = ["fuck", "shit", "Swear word here"]
+bad_words = ["Swear word here", ["Naughty words"], ["More if you want"]]
 #good_words = ["Good words here"]
 
 # Main loop
